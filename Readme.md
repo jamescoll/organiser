@@ -41,4 +41,4 @@ Frontend server will run on <http://localhost:4200>
 
 ## Learn more
 
-To be filled in
+This is a stack together of various differnet angular apps into a calendar/organiser app with weather functionality. Nothing special to see here..just a useful lil organizer for me which currently looks like a car-crash but will become better and nicer with time.

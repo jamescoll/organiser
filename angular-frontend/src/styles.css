@@ -9,7 +9,12 @@ body {
   color: #333;
 }
 
-/*
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+
+
 h1 {
   font-size: 36px;
 }
@@ -36,6 +41,7 @@ input {
   width: 100%;
   margin: 0 auto;
   margin-top: 60px;
+  margin-bottom: 60px;
   background-color: #fff;
   padding: 15px; 
   box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
@@ -158,4 +164,4 @@ li.completed .todo-title {
 
 li.completed i {
   color: #757575;
-}*/
+}

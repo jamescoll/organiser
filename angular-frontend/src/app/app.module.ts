@@ -19,15 +19,19 @@ import { FlatpickrModule } from 'angularx-flatpickr';
 
 import { DemoComponent } from './calendar.component';
 import { TimeComponent } from './time.component';
+import { WeatherComponent } from './weather.component';
 
 import {MomentModule} from 'angular2-moment/moment.module';
+
+import { AngularWeatherWidgetModule, WeatherApiName } from 'angular-weather-widget';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoListComponent,
     DemoComponent,
-    TimeComponent
+    TimeComponent,
+    WeatherComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +41,12 @@ import {MomentModule} from 'angular2-moment/moment.module';
     BrowserAnimationsModule,
     NgbModalModule.forRoot(),
     FlatpickrModule.forRoot(),
-    CalendarModule.forRoot()
+    CalendarModule.forRoot(),
+    AngularWeatherWidgetModule.forRoot({
+      key: 'f22d8478dbd7a1c602e1d61d2798ac0d',
+      name: WeatherApiName.OPEN_WEATHER_MAP,
+      baseUrl: 'http://api.openweathermap.org/data/2.5'
+    })
   ],
   exports: [
     DemoComponent

@@ -17,7 +17,7 @@ import {
       // Runs the enclosed function on a set interval.
       setInterval(() => {
   
-          this.clock = moment().format('h:mm:ss a');
+          this.clock = moment().format('dddd, h:mm:ss a');
       }, 1000) // Updates the time every second.
   }
   
